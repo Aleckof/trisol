@@ -25,7 +25,7 @@
     </section>
 
     <!-- The Problem & Solution -->
-    <section class="bg-slate-800 py-20">
+    <section class="bg-slate-800 py-20 border-b border-slate-700">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
             <div>
                 <h2 class="text-3xl font-bold mb-4 text-orange-500">The Threat</h2>
@@ -38,87 +38,103 @@
         </div>
     </section>
 
-    <!-- Stress Tests Section -->
+    <!-- Phase 1: Real Photo Baseline -->
     <section class="container mx-auto px-6 py-20">
-        <h2 class="text-4xl font-bold text-center mb-16">Defeating SOTA AI Generators</h2>
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Phase 1: Real-World Calibration</h2>
+            <p class="text-slate-400 text-lg">Before detecting fakes, TRISOL establishes a baseline of physical reality. We utilize the advanced YOLO-NAS architecture (by Deci.ai) for precise object and shadow detection, mapping physical anchors within the room.</p>
+        </div>
         
-        <div class="space-y-16 max-w-6xl mx-auto">
-            
-            <!-- Real Photo -->
+        <div class="max-w-6xl mx-auto">
             <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
                 <h3 class="text-2xl font-bold mb-4 text-green-400">Baseline: Real Environment (Score: 90/100)</h3>
-                <p class="text-slate-300 mb-6">TRISOL confirms multi-view spatial consistency and physical stability of organic scenes.</p>
+                <p class="text-slate-300 mb-6"><strong>Reading the Report:</strong> The Master Report below demonstrates TRISOL's multi-view analysis. The colored bounding boxes show YOLO-NAS identifying distinct physical objects. The connecting perspective vectors (cyan lines) prove that all objects exist in the same 3D space and obey the same gravitational and lighting laws. The high score confirms the scene's organic spatial consistency.</p>
                 
                 <!-- Inputs Row -->
                 <div class="mb-6">
-                    <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">Original Inputs</p>
+                    <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">Original Photo Inputs</p>
                     <div class="grid grid-cols-2 gap-4">
                         <img src="shoham-avisrur-Kskxj4M8jmI-unsplash.jpg" alt="Real 1" class="w-full h-auto object-cover rounded border border-slate-600">
-                        <img src="shoham avisrur m8SwCltV6YI unsplash.jpg" alt="Real 2" class="w-full h-auto object-cover rounded border border-slate-600">
+                        <img src="shoham-avisrur-m8SwCltV6YI-unsplash.jpg" alt="Real 2" class="w-full h-auto object-cover rounded border border-slate-600">
                     </div>
                 </div>
 
                 <!-- Output Full Width -->
                 <div>
-                    <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">System Output (Master Report)</p>
+                    <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">TRISOL Master Report</p>
                     <img src="Real photo_TRISOL_MASTER_REPORT_20260720_203231.jpg" alt="Real Photo Analysis" class="w-full h-auto rounded shadow-lg border border-slate-600">
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Fake Photo FLUX -->
-            <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
-                <h3 class="text-2xl font-bold mb-4 text-yellow-400">Adversarial Attack: FLUX.2 Pro (Score: 66/100)</h3>
-                <p class="text-slate-300 mb-6">Visually flawless texture generation, but TRISOL calculates a 23.6-degree geometry error in the dining table's perspective. Flagged for manual review.</p>
+    <!-- Phase 2: AI Forgery Defeat -->
+    <section class="bg-slate-800 py-20 border-t border-slate-700">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Phase 2: Defeating SOTA AI Generators</h2>
+                <p class="text-slate-400 text-lg">State-of-the-Art (SOTA) models generate flawless textures that easily bypass standard pixel-analysis tools. However, they lack a fundamental understanding of 3D physics. Defeating these specific industry-leading models proves that TRISOL's geometric reverse-engineering is future-proof against the highest levels of digital fraud.</p>
+            </div>
+            
+            <div class="space-y-16 max-w-6xl mx-auto">
                 
-                <!-- Inputs Row -->
-                <div class="mb-6">
-                    <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">Generated Inputs</p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <img src="flux-pro-2.0_High-end_architectural_photograph_of_a_luxury_modern_dining_room._ON_THE_LEFT_fl-0.jpg" alt="Flux 1" class="w-full h-auto object-cover rounded border border-slate-600">
-                        <img src="flux pro 2.0_High end architectural photograph of the EXACT SAME luxury modern dining room_ta-0.jpg" alt="Flux 2" class="w-full h-auto object-cover rounded border border-slate-600">
+                <!-- Fake Photo FLUX -->
+                <div class="bg-slate-900 p-8 rounded-xl border border-slate-700">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-400">Adversarial Attack: FLUX.2 Pro (Score: 66/100)</h3>
+                    <p class="text-slate-300 mb-2"><strong>The Threat:</strong> Developed by Black Forest Labs, FLUX.2 Pro is currently recognized as the leading model for hyper-realistic architectural generation and strict prompt adherence. It is a prime tool for sophisticated insurance fraud.</p>
+                    <p class="text-slate-300 mb-6"><strong>Reading the Report:</strong> While visually flawless to the human eye, TRISOL mathematically exposes the forgery. The red and yellow vectors in the report highlight a critical 23.6-degree geometry error in the dining table's perspective when mapped across two different generated "angles". The physics engine flags the claim for manual review.</p>
+                    
+                    <!-- Inputs Row -->
+                    <div class="mb-6">
+                        <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">Generated Inputs (FLUX.2 Pro)</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="flux-pro-2.0_High-end_architectural_photograph_of_a_luxury_modern_dining_room._ON_THE_LEFT_fl-0.jpg" alt="Flux 1" class="w-full h-auto object-cover rounded border border-slate-600">
+                            <img src="flux-pro-2.0_High-end_architectural_photograph_of_the_EXACT_SAME_luxury_modern_dining_room_ta-0.jpg" alt="Flux 2" class="w-full h-auto object-cover rounded border border-slate-600">
+                        </div>
+                    </div>
+
+                    <!-- Output Full Width -->
+                    <div>
+                        <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">TRISOL Master Report</p>
+                        <img src="TRISOL_MASTER_REPORT_20260720_210443.jpg" alt="FLUX.2 Pro Analysis" class="w-full h-auto rounded shadow-lg border border-slate-600">
                     </div>
                 </div>
 
-                <!-- Output Full Width -->
-                <div>
-                    <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">System Output (Master Report)</p>
-                    <img src="TRISOL_MASTER_REPORT_20260720_210443.jpg" alt="FLUX.2 Pro Analysis" class="w-full h-auto rounded shadow-lg border border-slate-600">
-                </div>
-            </div>
+                <!-- Fake Photo Gemini -->
+                <div class="bg-slate-900 p-8 rounded-xl border border-slate-700">
+                    <h3 class="text-2xl font-bold mb-4 text-red-500">Adversarial Attack: Gemini Advanced (Score: 40/100)</h3>
+                    <p class="text-slate-300 mb-2"><strong>The Threat:</strong> Google's Gemini multimodal ecosystem represents top-tier consumer AI. Its ability to iterate on images makes it dangerous for generating multiple "evidence" photos of a fake scene.</p>
+                    <p class="text-slate-300 mb-6"><strong>Reading the Report:</strong> This dashboard shows a total collapse of spatial mapping. The AI attempted to generate 4 different perspectives of the same room. TRISOL's object detection maps severe structural shifting: furniture changes scale and coordinates relative to the walls between shots. The system assigns a critical failure score of 40/100, blocking the automated claim.</p>
+                    
+                    <!-- Inputs Row -->
+                    <div class="mb-6">
+                        <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">Generated Inputs (Gemini Advanced)</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <img src="Perspective-1 Gemini_Generated_Image.png" alt="Gemini 1" class="w-full h-auto object-cover rounded border border-slate-600">
+                            <img src="Perspective-2 Gemini_Generated_Image.png" alt="Gemini 2" class="w-full h-auto object-cover rounded border border-slate-600">
+                            <img src="Perspective-3 Gemini_Generated_Image.png" alt="Gemini 3" class="w-full h-auto object-cover rounded border border-slate-600">
+                            <img src="Perspective-4 Gemini_Generated_Image.png" alt="Gemini 4" class="w-full h-auto object-cover rounded border border-slate-600">
+                        </div>
+                    </div>
 
-             <!-- Fake Photo Gemini -->
-             <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
-                <h3 class="text-2xl font-bold mb-4 text-red-500">Adversarial Attack: Gemini (Score: 40/100)</h3>
-                <p class="text-slate-300 mb-6">Total failure to maintain the spatial consistency of the furniture across 4 different camera angles. Critical geometry mismatch detected.</p>
-                
-                <!-- Inputs Row -->
-                <div class="mb-6">
-                    <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">Generated Inputs</p>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <img src="Perspective-1 Gemini_Generated_Image.png" alt="Gemini 1" class="w-full h-auto object-cover rounded border border-slate-600">
-                        <img src="Perspective-2 Gemini_Generated_Image.png" alt="Gemini 2" class="w-full h-auto object-cover rounded border border-slate-600">
-                        <img src="Perspective-3 Gemini_Generated_Image.png" alt="Gemini 3" class="w-full h-auto object-cover rounded border border-slate-600">
-                        <img src="Perspective-4 Gemini_Generated_Image.png" alt="Gemini 4" class="w-full h-auto object-cover rounded border border-slate-600">
+                    <!-- Output Full Width -->
+                    <div>
+                        <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">TRISOL Master Report</p>
+                        <img src="TRISOL_MASTER_REPORT_20260720_165139.jpg" alt="Gemini Analysis" class="w-full h-auto rounded shadow-lg border border-slate-600">
                     </div>
                 </div>
 
-                <!-- Output Full Width -->
-                <div>
-                    <p class="text-sm text-slate-400 mb-3 uppercase tracking-wide">System Output (Master Report)</p>
-                    <img src="TRISOL_MASTER_REPORT_20260720_165139.jpg" alt="Gemini Analysis" class="w-full h-auto rounded shadow-lg border border-slate-600">
-                </div>
             </div>
-
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="bg-slate-800 py-20">
+    <section class="bg-slate-900 py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-16">The Scientific & Engineering Core</h2>
             <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
                 <!-- Oleksii -->
-                <div class="text-center bg-slate-900 p-8 rounded-xl border border-slate-700">
+                <div class="text-center bg-slate-800 p-8 rounded-xl border border-slate-700">
                     <h3 class="text-2xl font-bold">Dr. Oleksii Kofanov</h3>
                     <p class="text-orange-500 mb-4">Co-Founder & Project Lead</p>
                     <p class="text-slate-300 text-sm mb-6">Ph.D. in Economics & Ph.D. in Engineering Sciences. Manager of the EU HORIZON grant EU-TRAINS. Cabinet of Ministers of Ukraine Scholarship for Young Scientists 2024-2026.</p>
@@ -128,7 +144,7 @@
                     </div>
                 </div>
                 <!-- Olena -->
-                <div class="text-center bg-slate-900 p-8 rounded-xl border border-slate-700">
+                <div class="text-center bg-slate-800 p-8 rounded-xl border border-slate-700">
                     <h3 class="text-2xl font-bold">Prof. Olena Kofanova</h3>
                     <p class="text-orange-500 mb-4">Co-Founder & Head of R&D</p>
                     <p class="text-slate-300 text-sm mb-6">Ph.D. in Chemistry & Doctor of Pedagogical Sciences. Expert Reviewer for the IPCC. Winner of the Innovative Ideas Contest 2023 (IDEA-East-Hub, Germany).</p>
